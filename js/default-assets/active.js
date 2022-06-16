@@ -8,7 +8,7 @@
     // ****************************
 
     akame_window.on('load', function () {
-        $('#preloader').fadeOut('500', function () {
+        $('#preloader').fadeOut('10', function () {
             $(this).remove();
         });
     });
@@ -31,7 +31,7 @@
             items: 1,
             loop: true,
             autoplay: true,
-            smartSpeed: 1500
+            smartSpeed: 1000
         })
         welcomeSlider.on('translate.owl.carousel', function () {
             var layer = $("[data-animation]");

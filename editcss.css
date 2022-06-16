@@ -5,6 +5,7 @@
 .classy-nav-container {
     position: fixed;
     z-index: 100;
+    left: 0;
     background-color: #ffffff;
     width: 100%;
     
@@ -65,12 +66,15 @@ span.h6{
 .form-control:focus{
     box-shadow:none;
 }
-/* .section-padding-80-0 {
-    padding-top: 17px;
-    padding-bottom: 0;
-} */
+
 .border-radius-50{
     border-radius: 50px;
+}
+.border-2{
+    border:2px solid;
+}
+.border-black{
+    border-color: #000;
 }
 .btn-primary{
     background-color: #02aff3;
@@ -82,7 +86,50 @@ span.h6{
     padding-right: 15rem!important;
 }
 
+.card-img-top{
+    height: 28vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
+.owl-prev{
+    left:-50px;
+}
+.owl-next{
+    right:-50px;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top:30px;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    background: transparent;
+    color:black;
+    font-size: 4rem;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+    color:black;
+}
+
+
+.event-img{
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+}
+.event-img:hover{
+    object-fit: fill;
+}
+.btn-gradient {
+    background-image: linear-gradient(to right, #19adeb, #edbbbf);
+  }
+  .giving p{
+    font-size: 1.6rem;
+    color:#000;
+    font-weight: 500;
+  }
 @media only screen and (min-width: 768px) and (max-width: 991px){
 .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 23px;
